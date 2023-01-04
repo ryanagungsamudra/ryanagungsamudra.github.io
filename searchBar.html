@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap v5.2 -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&family=Rubik:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/product.css">
+    <title>Document</title>
+    <style>
+        .searchBox {
+            position: relative;
+            width: 65px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.5s;
+        }
+        .searchBox:hover {
+            width: 300px;
+        }
+        .searchBox input {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            /* border-radius: 20px; */
+            border: none;
+            padding: 0px 25px;
+            outline: none;
+            font-size: 1em;
+            color: #555;
+            /* box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1) */
+        }
+        .searchBox input::placeholder,
+        .searchBox input 
+        {
+            color: transparent;
+        }
+        .searchBox:hover input::placeholder,
+        .searchBox:hover input 
+        {
+            color: #555;
+        }
+        .searchBox img {
+            position: absolute;
+            right: 10px;
+            color: #555;
+            font-size: 1.5em;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar Start -->
+    <header class="border-bottom border-2">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg my-4">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="img/coffeeLogo.svg" alt="logo" class="pb-2">
+                        <p class="d-inline ps-2">YANNN COFFEE</p>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link mx-2" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active mx-2" href="product.html">Product</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-2" href="yourcart.html">Your Cart</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-2" href="history.html">History</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="d-lg-flex">
+                        <div class="searchBox" style="margin-right: -0.5rem;">
+                            <input type="text" placeholder="Search Anything You Want...">
+                            <img src="img/product/search.svg" alt="searchBox">
+                        </div>
+                        <a class="mx-4" href="chat.html" style="margin-top: 0.7rem;">
+                            <img src="img/product/chat.svg" alt="chat">
+                            <span
+                                class="position-absolute top-0-notif start-100 translate-middle badge-notif bg-danger-notif d-none d-lg-block">
+                                1
+                                <span class="visually-hidden">unread messages</span>
+                        </a>
+                        <a href="profile.html" style="margin-top: 0.65rem;">
+                            <img src="img/product/profilepic.svg" alt="profile">
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Navbar End -->
+
+    
+
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>

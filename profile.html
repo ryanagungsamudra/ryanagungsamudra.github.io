@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap v5.2 -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&family=Rubik:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/profile.css">
+
+    <title>Profile</title>
+    <link rel="icon" type="image/x-icon" href="img/coffeeLogo.svg">
+</head>
+
+<body>
+
+    <!-- Navbar Start -->
+    <header class="border-bottom border-2">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg my-4">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="img/coffeeLogo.svg" alt="logo" class="pb-2">
+                        <p class="d-inline ps-2">YANNN COFFEE</p>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link mx-2" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-2" href="product.html">Product</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-2" href="yourcart.html">Your Cart</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-2" href="history.html">History</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="d-lg-flex">
+                        <div class="searchBox" style="margin-right: -0.5rem;">
+                            <input type="text" placeholder="Search Anything You Want...">
+                            <img src="img/product/search.svg" alt="searchBox">
+                        </div>
+                        <a class="mx-4" href="chat.html" style="margin-top: 0.7rem;">
+                            <img src="img/product/chat.svg" alt="chat">
+                            <span
+                                class="position-absolute top-0-notif start-100 translate-middle badge-notif bg-danger-notif d-none d-lg-block">
+                                1
+                                <span class="visually-hidden">unread messages</span>
+                        </a>
+                        <a href="profile.html" style="margin-top: 0.65rem;">
+                            <img src="img/product/profilepic.svg" alt="profile">
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Navbar End -->
+
+    <!-- Main Start -->
+    <main>
+        <div class="p-5 bg-primary text-white hero">
+            <div class="container container-1">
+                <div class="row">
+                    <div class="col">
+                        <h2 class="user-profile" style="margin-top: -4.5rem;">User Profile</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- LEFT SIDE START -->
+                    <div class="col-4 text-center">
+                        <img id="avatar" src="img/profile/ava.png" alt="avatar" style="width: 11rem; margin-top: 3rem;">
+                        <h5 id="fullNameLeft" class="pt-4" style="color: black; font-size: 20px; font-weight: 700;">Ryan Agung Samudra</h5>
+                        <p id="emailLeft" style="color: black; font-size: 15px; font-weight: 400;">ryansamudra67@gmail.com</p>
+                        <button class="btn btn-warning mt-2">
+                            Choose photo
+                        </button>
+                        <button class="btn btn-primary mt-2">
+                            Remove photo
+                        </button>
+                        <button class="btn btn-light mt-5">
+                            Edit Password
+                        </button>
+                        <h5 class="s-1 my-4">Do you want to save <br>the change?</h5>
+                        <button class="btn btn-primary mt-2">
+                            Save Change
+                        </button>
+                        <button class="btn btn-warning mt-2">
+                            Cancel
+                        </button>
+                        <button class="btn btn-light mt-5">
+                            Log out
+                        </button>
+                    </div>
+                    <!-- LEFT SIDE END -->
+
+                    <!-- RIGHT SIDE START -->
+                    <div class="col">
+                        <div class="container container-2">
+
+                            <div class="row" style="padding: 1.7rem;">
+                                <!-- form kiri -->
+                                <div class="col-7 text-start">
+                                    <h3 class="s-lg">Contact</h3>
+                                    <a href="#"><img src="img/profile/edit.png" alt="edit" class="edit"></a> 
+                                </div>
+                                <div class="col-7 text-start" style="margin-top: -0.6rem;">
+                                    <h5 class="s-md">Email address :</h5>
+                                    <p id="emailRight" class="s-sm">ryansamudra67@gmail.com</p>
+                                    <hr class="underline" style="border: 1px solid #000000;">
+                                    
+                                    <h5 class="s-md">Delivery address :</h5>
+                                    <p id="Address" class="s-sm">Sobodukuh, Tegalrejo, Magelang</p>
+                                    <hr class="underline" style="border: 1px solid #000000;">
+                                    
+                                    <h3 class="s-lg mt-5">Details</h3>
+                                    <h5 class="s-md mt-4">Display name :</h5>
+                                    <p id="fullNameRight" class="s-sm">Ryan Agung Samudra</p>
+                                    <hr class="underline" style="border: 1px solid #000000;">
+                                    
+                                    <h5 class="s-md">First name :</h5>
+                                    <p id="firstName" class="s-sm">Ryan</p>
+                                    <hr class="underline" style="border: 1px solid #000000;">
+                                    
+                                    <h5 class="s-md">Last name :</h5>
+                                    <p id="lastName" class="s-sm">Agung Samudra</p>
+                                    <hr class="underline" style="border: 1px solid #000000;">
+                                </div>
+                                <!-- form kanan -->
+                                <div class="col text-start" style="margin-top: -0.7rem;">
+                                    <h5 class="s-md">Mobile number :</h5>
+                                    <p id="mobileNumber" class="s-sm">(+62)82284798890</p>
+                                    <hr class="underline" style="border: 1px solid #000000;">
+                                    
+                                    <h5 class="s-md">DD/MM/YY</h5>
+                                    <p id="birthDate" class="s-sm">28/07/99</p>
+                                    <hr class="underline" style="border: 1px solid #000000;">
+                                </div>
+                            </div>
+                            <!-- Gender Check -->
+                            <div class="row">
+                                <div class="col text-center">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="gender" id="maleRadio" value="male">
+                                        <label class="form-check-label" for="inlineRadio1"><p class="gender">Male</p></label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="gender" id="femaleRadio" value="female">
+                                        <label class="form-check-label" for="inlineRadio2"><p class="gender">Female</p></label>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="line-bottom"></div>
+                    </div>
+                    <!-- RIGHT SIDE END -->
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Main End -->
+
+    <!-- Footer Start -->
+    <footer>
+        <div class="container-fluid" style="background-color: #F8F8F8; height: 466px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-8 pt-footer">
+                        <a href="index.html">
+                            <img src="img/coffeeLogo.svg" alt="logo" class="pb-2">
+                            <p class="d-inline ps-2"
+                                style="text-decoration: none; color: #0B132A; font-size: 20px; font-weight: 700;">YANNN
+                                COFFEE</p>
+                        </a>
+                        <p class="mt-3" style="font-size: 16px; font-weight: 500; color: #4F5665;">
+                            Coffee Shop is a store that sells some good <br>meals, and especially coffee. We provide
+                            <br>high quality beans
+                        </p>
+                        <div class="d-lg-flex">
+                            <a href="https://www.facebook.com/ryanagungsamudra/" target="_blank"
+                                style="margin-left: -20px;">
+                                <img src="img/Facebook.svg" alt="Facbook">
+                            </a>
+                            <a href="https://mobile.twitter.com/ryansamudra67" target="_blank"
+                                style="margin-left: -15px;">
+                                <img src="img/Twitter.svg" alt="Twitter">
+                            </a>
+                            <a href="https://instagram.com/ryanagungsamudra/" target="_blank"
+                                style="margin-left: -15px;">
+                                <img src="img/Instagram.svg" alt="Instagram">
+                            </a>
+                        </div>
+
+                        <p style="color: #AFB5C0; font-size: 16px; font-weight: 400;">©2022CoffeeStore</p>
+                    </div>
+                    <div class="col-2 pt-footer">
+                        <h5 class="mb-4">Product</h5>
+                        <a href="#">
+                            <p>Download</p>
+                        </a>
+                        <a href="#">
+                            <p>Pricing</p>
+                        </a>
+                        <a href="#">
+                            <p>Locations</p>
+                        </a>
+                        <a href="#">
+                            <p>Countries</p>
+                        </a>
+                        <a href="#">
+                            <p>Blog</p>
+                        </a>
+                    </div>
+                    <div class="col-2 pt-footer">
+                        <h5 class="mb-4">Engage</h5>
+                        <a href="#">
+                            <p>Coffe Shop ?</p>
+                        </a>
+                        <a href="#">
+                            <p>FAQ</p>
+                        </a>
+                        <a href="#">
+                            <p>About Us</p>
+                        </a>
+                        <a href="#">
+                            <p>Privacy Policy</p>
+                        </a>
+                        <a href="#">
+                            <p>Terms of Service</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <script>
+        
+        const user = localStorage.getItem("id")
+        fetch(`https://639fe7117aaf11ceb8a2b9a7.mockapi.io/yannncoffeeusers/${user}`, {
+                method: 'GET',
+            })
+                .then(response => response.json())
+                .then(data => {
+                    // Collect data from local storage (from register page)
+                    // Left form
+                    document.getElementById("fullNameLeft").innerHTML = `${data.firstName} ${data.lastName}`
+                    document.getElementById("emailLeft").innerHTML = data.email
+                    // right form
+                    document.getElementById("emailRight").innerHTML = data.email
+                    document.getElementById("mobileNumber").innerHTML = data.mobileNumber
+                    document.getElementById("firstName").innerHTML = data.firstName
+                    document.getElementById("lastName").innerHTML = data.lastName
+                    document.getElementById("fullNameRight").innerHTML = `${data.firstName} ${data.lastName}`
+                    document.getElementById("Address").innerHTML = data.address
+                    document.getElementById("birthDate").innerHTML = data.birthDate
+
+                    // Change avatar dynamically
+                    let gender = data.gender
+                    let avatar = document.getElementById("avatar")
+                    let source = gender === "male" ? "./img/register/man.png" : "./img/register/woman.png"
+                    avatar.src = source // ini untuk mengganti properti element di html
+
+                    // Change gender radio button dynamically
+                    if (gender == "male"){
+                        document.getElementById("maleRadio").checked = true
+                    } else {
+                        document.getElementById("femaleRadio").checked = true
+                    }
+
+                })
+                .catch (error => (error))
+
+    </script>
+</body>
+
+</html>
